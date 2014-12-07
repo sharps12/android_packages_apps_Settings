@@ -16,6 +16,11 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
+
+        <!-- AICP logo -->
+        <PreferenceScreen android:key="aicp_logo"
+                android:enabled="false"
+                android:layout="@layout/aicp_rom_logo" />
 	
         <!-- Temasek Extra Info -->
         <PreferenceScreen android:key="extrainfo"

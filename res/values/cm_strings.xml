@@ -46,7 +46,7 @@
     <string name="ring_mode_unchanged">Unchanged</string>
 
     <!-- Profiles settings  -->
-    <string name="profiles_settings_title">Profiles</string>
+    <string name="profiles_settings_title">System profiles</string>
     <string name="profiles_add">Add</string>
     <string name="profile_menu_delete">Delete</string>
     <string name="profile_settings_title">Profile</string>
@@ -176,6 +176,8 @@
     <string name="hardware_keys_action_in_app_search">In-app search</string>
     <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="button_wake_title">Wake up</string>
+    <string name="home_wake_summary">Pressing the home button will wake your device</string>
     <string name="power_end_call_title">End call</string>
     <string name="power_end_call_summary">Pressing the power button will end the current call</string>
     <string name="home_answer_call_title">Answer call</string>
@@ -341,7 +343,7 @@
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back button</string>
 
-    <string name="header_category_personalization">Personalization</string>
+    <string name="header_category_personalization">LolliGang</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
@@ -351,6 +353,9 @@
     <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>

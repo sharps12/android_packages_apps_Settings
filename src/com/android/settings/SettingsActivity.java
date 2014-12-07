@@ -68,6 +68,7 @@ import com.android.internal.util.XmlUtils;
 import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
+import com.android.settings.aicp.AicpSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
@@ -240,6 +241,7 @@ public class SettingsActivity extends Activity
             R.id.nfc_payment_settings,
             R.id.home_settings,
             R.id.dashboard,
+            R.id.aicp_settings,
             R.id.privacy_settings_cyanogenmod
     };
 
@@ -305,6 +307,7 @@ public class SettingsActivity extends Activity
             OtherSoundSettings.class.getName(),
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
+            AicpSettings.class.getName(),
             BlacklistSettings.class.getName(),
             com.android.settings.cyanogenmod.PrivacySettings.class.getName()
     };

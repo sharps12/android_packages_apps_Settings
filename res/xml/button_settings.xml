@@ -48,17 +48,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/wakeup_buttons_title" >
-
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-            android:key="home_wake_screen"
-            android:title="@string/home_wake_title"
-            android:summary="@string/home_wake_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="power_key"
         android:title="@string/hardware_keys_power_key_title" >
 
@@ -73,6 +62,12 @@
     <PreferenceCategory
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="home_wake_screen"
+            android:title="@string/button_wake_title"
+            android:summary="@string/home_wake_summary"
+            android:defaultValue="true" />
 
         <SwitchPreference
             android:key="home_answer_call"

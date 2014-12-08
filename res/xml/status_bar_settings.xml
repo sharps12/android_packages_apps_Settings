@@ -48,7 +48,6 @@
             android:summary="@string/status_bar_toggle_brightness_summary"
             android:defaultValue="false" />
 
-<<<<<<< HEAD
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="status_bar_notif_count"
             android:title="@string/status_bar_notif_count_title"
@@ -61,8 +60,6 @@
             android:summary="@string/status_bar_ticker_summary"
             android:defaultValue="true" />
 
-=======
->>>>>>> tem/cm-12.0
         <com.android.settings.cyanogenmod.SystemSettingListPreference
             android:key="quick_pulldown"
             android:title="@string/title_quick_pulldown"

@@ -5,6 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">LolliGang Version</string>
     <!-- Do NOT translate this -->
+<<<<<<< HEAD
     <string name="temasek_version_default">Lolligang V-1</string>
 
     <!-- Aicp Settings -->
@@ -160,6 +161,9 @@
 
     <!-- Kenrel tweaker -->
     <string name="kerneltweaker_settings_title">Kernel Tweaker</string>
+=======
+    <string name="temasek_version_default">Build V2.0</string>
+>>>>>>> tem/cm-12.0
 
     <!-- General strings -->
     <string name="attention">Attention</string>
@@ -379,12 +383,15 @@
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
 
+<<<<<<< HEAD
     <!-- HOME / volume button wake -->
     <string name="wakeup_buttons_title">Wake up</string>
     <string name="home_wake_title">Home button</string>
     <string name="home_wake_summary">Pressing the home button will wake your device</string>
     <string name="hardware_keys_volume_keys_title">Volume rocker wake</string>
 
+=======
+>>>>>>> tem/cm-12.0
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
@@ -395,6 +402,7 @@
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
 
     <!-- Navigation bar -->
+    <string name="nav_bar_title">Navigation bar</string>
     <string name="navbar_enable_bar_title">Enable on-screen nav bar</string>
     <string name="navbar_enable_bar_summary">Enable on-screen nav bar and disable hardware buttons</string>
     <string name="navbar_style_dimen_title">Nav bar dimensions</string>

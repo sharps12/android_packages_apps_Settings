@@ -5,6 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">LolliGang Version</string>
     <!-- Do NOT translate this -->
+<<<<<<< HEAD
     <string name="temasek_version_default">Lolligang V-3</string>
 
     <!-- Aicp Settings -->
@@ -175,6 +176,9 @@
 
     <!-- Kenrel tweaker -->
     <string name="kerneltweaker_settings_title">Kernel Tweaker</string>
+=======
+    <string name="temasek_version_default">Build V2.2</string>
+>>>>>>> tem/cm-12.0
 
     <!-- General strings -->
     <string name="attention">Attention</string>
@@ -496,8 +500,8 @@
 
     <!-- Navigation bar -->
     <string name="nav_bar_title">Navigation bar</string>
-    <string name="navbar_enable_bar_title">Enable on-screen nav bar</string>
-    <string name="navbar_enable_bar_summary">Enable on-screen nav bar and disable hardware buttons</string>
+    <string name="navbar_enable_bar_title">Navigation bar buttons</string>
+    <string name="navbar_enable_bar_summary">Enable on-screen nav bar buttons</string>
     <string name="navbar_style_dimen_title">Nav bar dimensions</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>

@@ -45,6 +45,13 @@
             android:fragment="com.android.settings.aicp.Animations"
             android:title="@string/anim_settings_title" />
 
+    <!-- App Sidebar -->
+    <PreferenceScreen
+            android:id="@+id/app_circle_sidebar"
+            android:icon="@drawable/ic_settings_sidebar"
+            android:title="@string/app_circle_bar_title"
+            android:fragment="com.android.settings.aicp.AppCircleSidebar" />
+
     <!-- Progressbar -->
     <PreferenceScreen
             android:key="progressbar_settings"

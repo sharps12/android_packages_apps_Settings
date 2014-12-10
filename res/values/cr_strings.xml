@@ -183,9 +183,6 @@
     <string name="disabled">Disabled</string>
     <string name="reset_message">Reset all entries to default?</string>
 
-    <!-- Device specific settings -->
-    <string name="screen_off_gesture_settings_title">Screen off gestures</string>
-
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>

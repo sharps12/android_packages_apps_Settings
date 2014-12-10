@@ -45,6 +45,13 @@
             android:fragment="com.android.settings.aicp.Animations"
             android:title="@string/anim_settings_title" />
 
+    <!-- Recents -->
+    <PreferenceScreen
+            android:key="recents"
+            android:icon="@drawable/ic_settings_recents"
+            android:fragment="com.android.settings.aicp.Recents"
+            android:title="@string/recents_title" />
+
     <!-- App Sidebar -->
     <PreferenceScreen
             android:id="@+id/app_circle_sidebar"

@@ -37,16 +37,6 @@ public class AicpSettings extends SettingsPreferenceFragment
 
     private static final String TAG = "AicpLabs";
 
-    private static final String KERNELTWEAKER_START = "kerneltweaker_start";
-
-    // Package name of the kernel tweaker app
-    public static final String KERNELTWEAKER_PACKAGE_NAME = "com.dsht.kerneltweaker";
-    // Intent for launching the kernel tweaker main actvity
-    public static Intent INTENT_KERNELTWEAKER = new Intent(Intent.ACTION_MAIN)
-            .setClassName(KERNELTWEAKER_PACKAGE_NAME, KERNELTWEAKER_PACKAGE_NAME + ".MainActivity");
-
-    private Preference mKernelTweaker;
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -56,9 +46,6 @@ public class AicpSettings extends SettingsPreferenceFragment
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
         PackageManager pm = getPackageManager();
-
-        mKernelTweaker = (Preference)
-                prefSet.findPreference(KERNELTWEAKER_START);
 
     }
 
@@ -78,11 +65,6 @@ public class AicpSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mKernelTweaker){
-            startActivity(INTENT_KERNELTWEAKER);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 }
 

@@ -80,10 +80,4 @@
             android:fragment="com.android.settings.InitD"
             android:title="@string/init_d_title" />
 
-    <!-- KernelTweaker -->
-    <PreferenceScreen
-            android:key="kerneltweaker_start"
-            android:title="@string/kerneltweaker_settings_title"
-            android:icon="@drawable/ic_kernel_tweaker" />
-
 </PreferenceScreen>

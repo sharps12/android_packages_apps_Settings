@@ -5,7 +5,6 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">LolliGang Version</string>
     <!-- Do NOT translate this -->
-<<<<<<< HEAD
     <string name="temasek_version_default">Lolligang V-4</string>
 
     <!-- Aicp Settings -->
@@ -14,22 +13,6 @@
 
     <!-- Various shit -->
     <string name="various_shit_title">Misc</string>
-
-    <!-- Custom Over scroll Settings -->
-    <string name="ui_overscroll_title">Over scrolling effects</string>
-    <string name="overscroll_glow_title">Over scroll Color</string>
-    <string name="edge_effect_title">Edge Glow effect</string>
-    <string name="bounce_effect_title">Bounce effect</string>
-    <string name="none_effect_title">None</string>
-    <string name="extra_heavy_title">Extra Heavy</string>
-    <string name="heavy_title">Heavy</string>
-    <string name="medium_title">Medium</string>
-    <string name="light_title">Light</string>
-    <string name="extra_light_title">Extra Light</string>
-    <string name="overscroll_title">Over scrolling effect</string>
-    <string name="overscroll_summary">Choose how scrollable objects look when they overshoot</string>
-    <string name="overscroll_weight_title">Over scrolling weight</string>
-    <string name="overscroll_weight_summary">Select the weight of the scrollable objects</string>
 
     <!-- Display and Animations -->
     <string name="disp_anim_settings_title">Animations</string>
@@ -190,9 +173,6 @@
     <!-- Performance Settings | Warning dialog -->
     <string name="performance_settings_warning_title">Proceed with Caution</string>
     <string name="performance_settings_warning_header">Warning</string>
-=======
-    <string name="temasek_version_default">Build V2.3.1</string>
->>>>>>> tem/cm-12.0
 
     <!-- General strings -->
     <string name="attention">Attention</string>

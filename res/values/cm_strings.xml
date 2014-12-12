@@ -198,7 +198,6 @@
     <string name="color_enhancement_title">Color enhancement</string>
     <string name="color_enhancement_summary">Dynamically enhance the color of the display</string>
 
-    <string name="show_battery_percent_title">Show battery percentage</string>
     <string name="app_security_title">App security</string>
 
     <!-- Blacklist preferences -->
@@ -248,6 +247,17 @@
     <string name="pa_login_submit_button">Sign in</string>
     <string name="pa_login_checking_password">Checking account\u2026</string>
     <string name="pa_login_incorrect_login">Login was incorrect</string>
+
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_lockscreen_rotation_title">Rotate lock screen</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
 
     <!--- Sms security limit -->
     <string name="app_security_title">App security</string>
@@ -358,8 +368,17 @@
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 
+<<<<<<< HEAD
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
+=======
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Show battery percentage</string>
+    <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+>>>>>>> tem/cm-12.0
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
@@ -475,10 +494,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="auto_brightness_sensitivity_high">High</string>
     <string name="auto_brightness_sensitivity_veryhigh">Very high</string>
     
-    <!-- Battery text setting -->
-    <string name="status_bar_toggle_battery_text">Display battery level</string>
-    <string name="status_bar_toggle_battery_summary">Show battery level next to battery icon</string>
-
     <!-- App ops -->
     <string name="app_ops_summaries_coarse_location">coarse location</string>
     <string name="app_ops_summaries_fine_location">fine location</string>
@@ -672,11 +687,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="gamma_tuning_brightness">Brightness</string>
     <string name="gamma_tuning_saturation">Saturation</string>
 
-    <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">Launch music app</string>
-    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
-
-    <string name="auto_brightness_reset_button">Reset</string>
+    <string name="settings_reset_button">Reset</string>
 
     <!-- Message when bluetooth dialog for pin entry is showing  when HIGH security enabled-->
     <string name="bluetooth_enter_pin_msg_hs">Device requires High Security 16 character passkey</string>

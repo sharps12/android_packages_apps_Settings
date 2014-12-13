@@ -5,7 +5,6 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">LolliGang Version</string>
     <!-- Do NOT translate this -->
-<<<<<<< HEAD
     <string name="temasek_version_default">Lolligang V-4</string>
 
     <!-- Aicp Settings -->
@@ -174,9 +173,6 @@
     <!-- Performance Settings | Warning dialog -->
     <string name="performance_settings_warning_title">Proceed with Caution</string>
     <string name="performance_settings_warning_header">Warning</string>
-=======
-    <string name="temasek_version_default">Build V2.5</string>
->>>>>>> tem/cm-12.0
 
     <!-- General strings -->
     <string name="attention">Attention</string>

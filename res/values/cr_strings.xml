@@ -5,6 +5,7 @@
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">LolliGang Version</string>
     <!-- Do NOT translate this -->
+<<<<<<< HEAD
     <string name="temasek_version_default">Lolligang V-4</string>
 
     <!-- Aicp Settings -->
@@ -173,6 +174,9 @@
     <!-- Performance Settings | Warning dialog -->
     <string name="performance_settings_warning_title">Proceed with Caution</string>
     <string name="performance_settings_warning_header">Warning</string>
+=======
+    <string name="temasek_version_default">Build V2.5</string>
+>>>>>>> tem/cm-12.0
 
     <!-- General strings -->
     <string name="attention">Attention</string>
@@ -598,5 +602,15 @@ sword is entered</string>
     <!-- Unaccounted and overcounted battery stats -->
     <string name="show_unac_and_overcounted_stats_title">Show unaccounted/overcounted stats</string>
     <string name="show_unac_and_overcounted_stats_summary">Show in battery statistics unaccounted and over-counted usage.</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Wakelock blocker</string>
+    <string name="wakelock_blocker_title">Enable</string>
+    <string name="wakelock_blocker_summary">Block system wakelocks</string>
+    <string name="wakelock_blocker_save">Save</string>
+    <string name="wakelock_list_header">Available wakelocks</string>
+    <string name="wakelock_blocker_reload">Reload</string>
+    <string name="wakelock_blocker_warning_title">Proceed with caution</string>
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
 </resources>

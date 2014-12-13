@@ -103,7 +103,7 @@
         <dashboard-tile
                 android:id="@+id/button_settings"
                 android:title="@string/button_pref_title"
-                android:fragment="com.android.settings.ButtonSettings"
+                android:fragment="com.android.settings.cyanogenmod.ButtonSettings"
                 android:icon="@drawable/ic_settings_buttons"
                 />
 
@@ -275,14 +275,6 @@
                 android:icon="@drawable/ic_action_permission"
                 />
 
-        <!-- Development -->
-        <dashboard-tile
-                android:id="@+id/development_settings"
-                android:title="@string/development_settings_title"
-                android:fragment="com.android.settings.DevelopmentSettings"
-                android:icon="@drawable/ic_settings_development"
-                />
-
         <!-- SuperSU -->
         <dashboard-tile
             android:id="@+id/supersu_settings"
@@ -302,6 +294,17 @@
                 android:icon="@drawable/ic_settings_notifications"
                 />
 
+<<<<<<< HEAD
+=======
+        <!-- Development -->
+        <dashboard-tile
+                android:id="@+id/development_settings"
+                android:title="@string/development_settings_title"
+                android:fragment="com.android.settings.DevelopmentSettings"
+                android:icon="@drawable/ic_settings_development"
+                />
+
+>>>>>>> tem/cm-12.0
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"

@@ -259,6 +259,14 @@
                 android:icon="@drawable/ic_settings_accessibility"
                 />
 
+        <!-- Wakelock blocker -->
+        <dashboard-tile
+                android:id="@+id/wakelock_blocker"
+                android:title="@string/wakelock_blocker"
+	        android:fragment="com.android.settings.WakeLockBlocker"
+                android:icon="@drawable/ic_settings_wakelock_blocker"
+                />
+
         <!-- Print -->
         <dashboard-tile
                 android:id="@+id/print_settings"
@@ -286,16 +294,6 @@
                 android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
 
-	<!-- Wakelock blocker -->
-        <dashboard-tile
-                android:id="@+id/wakelock_blocker"
-                android:title="@string/wakelock_blocker"
-	        android:fragment="com.android.settings.WakeLockBlocker"
-                android:icon="@drawable/ic_settings_notifications"
-                />
-
-<<<<<<< HEAD
-=======
         <!-- Development -->
         <dashboard-tile
                 android:id="@+id/development_settings"
@@ -304,7 +302,6 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
->>>>>>> tem/cm-12.0
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"

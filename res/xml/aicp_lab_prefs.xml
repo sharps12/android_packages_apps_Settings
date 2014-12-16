@@ -66,13 +66,6 @@
             android:title="@string/app_circle_bar_title"
             android:fragment="com.android.settings.aicp.AppCircleSidebar" />
 
-    <!-- Progressbar -->
-    <PreferenceScreen
-            android:key="progressbar_settings"
-            android:icon="@drawable/ic_settings_progress"
-            android:fragment="com.android.settings.aicp.ProgressBar"
-            android:title="@string/progressbar_title" />
-
     <!-- Ad blocker -->
     <PreferenceScreen
             android:key="hfm_settings"

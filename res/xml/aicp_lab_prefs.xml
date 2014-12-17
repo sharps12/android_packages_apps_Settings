@@ -59,6 +59,13 @@
             android:title="@string/app_circle_bar_title"
             android:fragment="com.android.settings.aicp.AppCircleSidebar" />
 
+    <!-- Gesture anywhere -->
+    <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:icon="@drawable/ic_settings_gesture"
+            android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
+            android:title="@string/gesture_anywhere_title" />
+
     <!-- Ad blocker -->
     <PreferenceScreen
             android:key="hfm_settings"

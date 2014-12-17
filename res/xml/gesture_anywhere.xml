@@ -41,11 +41,7 @@
     <PreferenceCategory
         android:title="@string/trigger_category" />
 
-<<<<<<< HEAD
     <com.android.settings.widget.SeekBarPreferenceCham
-=======
-    <com.android.settings.temasek.SeekBarPreference
->>>>>>> tem/cm-12.0
         android:key="gesture_anywhere_trigger_width"
         android:title="@string/trigger_width_title"
         android:summary="@string/trigger_width_summary"
@@ -56,11 +52,7 @@
         settings:unitsRight="px"
         android:dependency="gesture_anywhere_enabled" />
 
-<<<<<<< HEAD
     <com.android.settings.widget.SeekBarPreferenceCham
-=======
-    <com.android.settings.temasek.SeekBarPreference
->>>>>>> tem/cm-12.0
         android:key="gesture_anywhere_trigger_top"
         android:title="@string/trigger_top_title"
         android:summary="@string/trigger_top_summary"
@@ -71,11 +63,7 @@
         settings:unitsRight="%"
         android:dependency="gesture_anywhere_enabled" />
 
-<<<<<<< HEAD
     <com.android.settings.widget.SeekBarPreferenceCham
-=======
-    <com.android.settings.temasek.SeekBarPreference
->>>>>>> tem/cm-12.0
         android:key="gesture_anywhere_trigger_bottom"
         android:title="@string/trigger_bottom_title"
         android:summary="@string/trigger_bottom_summary"

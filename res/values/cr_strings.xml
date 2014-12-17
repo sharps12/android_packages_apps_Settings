@@ -18,6 +18,7 @@
     <string name="disp_anim_settings_title">Animations</string>
     <string name="anim_settings_title">Animations</string>
 
+<<<<<<< HEAD
     <!-- Gesture Anywhere -->
     <string name="gesture_anywhere_title">Gesture Anywhere</string>
     <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
@@ -141,6 +142,29 @@
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
+=======
+    <!-- Smooth ProgressBar -->
+    <string name="progressbar_title">Custom ProgressBar</string>
+    <string name="progressbar_mirror_title">Mirror Mode</string>
+    <string name="progressbar_reverse_title">Reversed</string>
+    <string name="progressbar_speed_title">Speed</string>
+    <string name="progressbar_width_title">Stroke Width</string>
+    <string name="progressbar_length_title">Separator length</string>
+    <string name="progressbar_count_title">Sections Count</string>
+    <string name="progressbar_color_1_title">Color1</string>
+    <string name="progressbar_color_2_title">Color2</string>
+    <string name="progressbar_color_3_title">Color3</string>
+    <string name="progressbar_color_4_title">Color4</string>
+    <string name="sample_progressbar_text">ProgressBar : Preview</string>
+    <string name="progressbar_interpolator">Interpolator</string>
+    <string name="progressbar_none">None</string>
+    <string name="progressbar_acclerate">Accelerate</string>
+    <string name="progressbar_linear">Linear</string>
+    <string name="progressbar_acceleratedecelerate">AccelerateDecelerate</string>
+    <string name="progressbar_decelerate">Decelerate</string>
+    <string name="progressbar_reset_message">Reset progress bar style to default?</string>
+    <string name="progressbar_button_reset">Reset colors</string>
+>>>>>>> parent of 320c24c... Gestures
 
     <!-- Battery Bar -->
     <string name="battery_icon_title">Battery</string>
@@ -736,6 +760,7 @@ sword is entered</string>
     <string name="heads_up_time_out_10sec">10 seconds</string>
     <string name="heads_up_time_out_never">Never</string>
 
+<<<<<<< HEAD
     <!-- Option to enable/disable scrolling cache -->
     <string name="pref_scrollingcache_title">Scrolling cache</string>
     <string name="pref_scrollingcache_summary">Scrolling cache may improve scrolling performance at the cost of memory</string>
@@ -748,4 +773,6 @@ sword is entered</string>
     <string name="battery_saver_title">Warning color</string>
     <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
 
+=======
+>>>>>>> parent of 320c24c... Gestures
 </resources>

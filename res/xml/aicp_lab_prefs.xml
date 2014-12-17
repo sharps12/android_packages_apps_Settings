@@ -45,13 +45,6 @@
             android:fragment="com.android.settings.aicp.Animations"
             android:title="@string/anim_settings_title" />
 
-    <!-- Gesture anywhere -->
-    <PreferenceScreen
-            android:key="gesture_anywhere"
-            android:icon="@drawable/ic_settings_gesture"
-            android:fragment="com.android.settings.aicp.gestureanywhere.GestureAnywhereSettings"
-            android:title="@string/gesture_anywhere_title" />
-
     <!-- Recents -->
     <PreferenceScreen
             android:key="recents"

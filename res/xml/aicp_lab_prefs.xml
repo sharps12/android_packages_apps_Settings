@@ -63,7 +63,7 @@
     <PreferenceScreen
             android:key="gesture_anywhere"
             android:icon="@drawable/ic_settings_gesture"
-            android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
+            android:fragment="com.android.settings.aicp.gestureanywhere.GestureAnywhereSettings"
             android:title="@string/gesture_anywhere_title" />
 
     <!-- Ad blocker -->

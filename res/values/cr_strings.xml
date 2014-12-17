@@ -161,7 +161,6 @@
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="reset_message">Reset all entries to default?</string>
-    <string name="extras_temasek_settings">temasek extras</string>
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
@@ -693,7 +692,7 @@ sword is entered</string>
     <string name="unlock_set_unlock_mode_gesture">Gesture</string>
 
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesture Anywhere</string>
+    <string name="gesture_anywhere_title">Gestures</string>
     <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
     <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
     <string name="gesture_anywhere_position_title">Loction</string>

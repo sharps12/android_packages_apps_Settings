@@ -859,4 +859,33 @@
         <item>10000</item>
     </string-array>
 
+<<<<<<< HEAD
+=======
+    <!-- Option to enable/disable scrolling cache -->
+    <string-array name="entries_scrollingcache" translatable="false">
+        <item>@string/pref_scrollingcache_force_enable</item>
+        <item>@string/pref_scrollingcache_default_enable</item>
+        <item>@string/pref_scrollingcache_default_disable</item>
+        <item>@string/pref_scrollingcache_force_disable</item>
+    </string-array>
+
+    <string-array name="values_scrollingcache" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Gesture Anywhere -->
+    <string-array name="gesture_anywhere_position_entries" translatable="false">
+        <item>@string/gesture_anywhere_position_left</item>
+        <item>@string/gesture_anywhere_position_right</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_position_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+>>>>>>> tem/cm-12.0
 </resources>

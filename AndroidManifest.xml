@@ -2190,6 +2190,7 @@
                 android:resource="@id/sim_settings" />
         </activity>
 
+<<<<<<< HEAD
         <!-- Aicp Extras -->
         <activity android:name="Settings$AicpSettingsActivity"
             android:label="@string/aicp_settings_title"
@@ -2207,6 +2208,10 @@
 
         <activity android:name=".aicp.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".aicp.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+=======
+        <activity android:name=".crdroid.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".crdroid.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+>>>>>>> tem/cm-12.0
 
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"

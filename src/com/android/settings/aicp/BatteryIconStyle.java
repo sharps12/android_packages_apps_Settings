@@ -16,11 +16,15 @@
 
 package com.android.settings.aicp;
 
+import android.os.Bundle;
+import android.os.UserHandle;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.database.ContentObserver;
+import android.net.Uri;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -35,12 +39,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.android.settings.R;
+//import android.telephony.MSimTelephonyManager;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
+import java.util.Locale;
 import java.util.Date;
 
 public class BatteryIconStyle extends SettingsPreferenceFragment
@@ -53,6 +60,12 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
     private static final String PREF_BATT_BAR_COLOR = "battery_bar_color";
     private static final String PREF_BATT_BAR_WIDTH = "battery_bar_thickness";
     private static final String PREF_BATT_ANIMATE = "battery_bar_animate";
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    
+    private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+
+    private static final String STATUS_BAR_BATTERY_STYLE_HIDDEN = "4";
+    private static final String STATUS_BAR_BATTERY_STYLE_TEXT = "6";
 
 
     private static final int MENU_RESET = Menu.FIRST;
@@ -62,6 +75,9 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
     private ListPreference mBatteryBarThickness;
     private CheckBoxPreference mBatteryBarChargingAnimation;
     private ColorPickerPreference mBatteryBarColor;
+
+    private ListPreference mStatusBarBattery;
+    private ListPreference mStatusBarBatteryShowPercent;
 
     private boolean mCheckPreferences;
 
@@ -121,6 +137,20 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
         mBatteryBarThickness.setValue((Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_BATTERY_BAR_THICKNESS, 1)) + "");
         mBatteryBarThickness.setSummary(mBatteryBarThickness.getEntry());
+
+        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
+        mStatusBarBatteryShowPercent =
+                (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+
+        int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_BATTERY_STYLE, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
+
+        int batteryShowPercent = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
+        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
+        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
 
         updateBatteryBarOptions();
 
@@ -193,8 +223,30 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
             Settings.System.putInt(resolver, Settings.System.STATUSBAR_BATTERY_BAR_THICKNESS, val);
             mBatteryBarThickness.setSummary(mBatteryBarThickness.getEntries()[index]);
             return true;
+        } else if (preference == mStatusBarBattery) {
+            int batteryStyle = Integer.valueOf((String) objValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_BATTERY_STYLE, batteryStyle);
+            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
+
+            enableStatusBarBatteryDependents((String) objValue);
+            return true;
+        } else if (preference == mStatusBarBatteryShowPercent) {
+            int batteryShowPercent = Integer.valueOf((String) objValue);
+            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
+            mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntries()[index]);
+            return true;
         }
         return false;
+    }
+
+    private void enableStatusBarBatteryDependents(String value) {
+        boolean enabled = !(value.equals(STATUS_BAR_BATTERY_STYLE_TEXT)
+                || value.equals(STATUS_BAR_BATTERY_STYLE_HIDDEN));
+        mStatusBarBatteryShowPercent.setEnabled(enabled);
     }
 
    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {

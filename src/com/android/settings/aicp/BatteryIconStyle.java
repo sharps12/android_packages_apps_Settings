@@ -36,6 +36,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -224,17 +225,17 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
             mBatteryBarThickness.setSummary(mBatteryBarThickness.getEntries()[index]);
             return true;
         } else if (preference == mStatusBarBattery) {
-            int batteryStyle = Integer.valueOf((String) objValue);
-            int index = mStatusBarBattery.findIndexOfValue((String) objValue);
+            int batteryStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_BATTERY_STYLE, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
 
-            enableStatusBarBatteryDependents((String) objValue);
+            enableStatusBarBatteryDependents((String) newValue);
             return true;
         } else if (preference == mStatusBarBatteryShowPercent) {
-            int batteryShowPercent = Integer.valueOf((String) objValue);
-            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) objValue);
+            int batteryShowPercent = Integer.valueOf((String) newValue);
+            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
             mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntries()[index]);

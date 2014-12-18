@@ -31,6 +31,13 @@
         android:title="@string/status_bar_settings" >
 
         <ListPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values" />
+
+        <ListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/status_bar_battery_percentage_title"
             android:dialogTitle="@string/status_bar_battery_percentage_dialog_title"
@@ -87,6 +94,64 @@
 	    android:summary="@string/network_traffic_summary"
 	    android:title="@string/network_traffic_title" />
 
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_show_weather"
+            android:title="@string/status_bar_show_weather_title"
+            android:summary="@string/status_bar_show_weather_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_notif_count"
+            android:title="@string/status_bar_notif_count_title"
+            android:summary="@string/status_bar_notif_count_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
+<<<<<<< HEAD
+=======
+    <PreferenceCategory
+        android:key="recents_panel"
+        android:title="@string/recents_panel_settings" >
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="show_clear_all_recents"
+            android:title="@string/show_clear_all_recents_button_title"
+            android:summary="@string/show_clear_all_recents_button_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingListPreference
+            android:key="recents_clear_all_location"
+            android:title="@string/recents_clear_all_location_title"
+            android:entries="@array/recents_clear_all_location_entries"
+            android:entryValues="@array/recents_clear_all_location_values"
+            android:defaultValue="0"
+            android:dependency="show_clear_all_recents" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="recents_show_hide_search_bar"
+            android:title="@string/recents_show_searchbar"
+            android:summary="@string/recents_show_searchbar_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/extras_temasek_settings" >
+
+        <!-- Gesture anywhere -->
+        <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:fragment="com.android.settings.crdroid.gestureanywhere.GestureAnywhereSettings"
+            android:title="@string/gesture_anywhere_title" />
+
+        <SwitchPreference
+            android:key="status_bar_ticker_enabled"
+            android:title="@string/status_bar_ticker_title"
+            android:summary="@string/status_bar_ticker_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+>>>>>>> tem/cm-12.0
 </PreferenceScreen>

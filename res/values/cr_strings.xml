@@ -161,6 +161,10 @@
     <string name="enabled">Enabled</string>
     <string name="disabled">Disabled</string>
     <string name="reset_message">Reset all entries to default?</string>
+<<<<<<< HEAD
+=======
+    <string name="extras_temasek_settings">Temasek Extras</string>
+>>>>>>> tem/cm-12.0
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
